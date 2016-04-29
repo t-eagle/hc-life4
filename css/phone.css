@@ -1,0 +1,597 @@
+html {
+    -ms-touch-action: none;  /* 阻止windows Phone 的默认触摸事件 */
+}
+body,
+div,
+p {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+body {
+    width: 100%;
+    *cursor: default;
+    overflow: hidden;
+    font: 16px/1.5 "Microsoft YaHei",Helvetica,STHeiti STXihei,Microsoft JhengHei,Arial;
+}
+#pageContain {
+    overflow: hidden;
+}
+.page {
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.contain {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: relative;
+    z-index: 0;
+}
+.current .contain,.slide .contain {
+    display: block;
+}
+.current {
+    display: block;
+    z-index: 1;
+}
+.slide {
+    display: block;
+    z-index: 2;
+}
+.swipe {
+    display: block;
+    z-index: 3;
+    transition-duration: 0ms !important;
+    -webkit-transition-duration: 0ms !important;
+}
+/*.page6 {*/
+/*background: #22ffff;*/
+/*}*/
+.navbar-default{
+    background: #21252e;
+    border-bottom: none;
+}
+.navbar-nav{
+    background: #23272f;
+    margin: 0px -15px;
+}
+.navbar-brand{
+    padding: 10px 15px;
+}
+.nav>li{
+    border-bottom: 1px solid #3d4148;
+}
+.nav>li>a>img{
+    width: 30px;
+    margin-right: 10px;
+    float: left;
+}
+.navbar-nav>li>a{
+    line-height: 30px;
+    padding: 16px;
+}
+.navbar-default .navbar-nav>li>a{
+    color: #d2fcff ;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #d2fcff;
+}
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse{
+    max-height: 400px;
+}
+.navbar-toggle{
+    margin-right: 128px!important;
+}
+.nav-phone{
+    width: 126px;
+    height: 50px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: #11b6c2;
+    padding: 10px 0 10px 0;
+    /*background-image: url("img/home-4.jpg") center no-repeat;*/
+
+}
+.nav-phone img{
+    margin-top: 3px;
+    float: left;
+}
+.nav-phone .tel-left{
+    margin-left: -9px;
+    margin-top: -10px;
+
+}
+.nav-phone a{
+    color: #fff;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 28px;
+}
+.title{
+    font-size: 20px;
+    color: #21252e;
+}
+/*p {*/
+/*width: 200px;*/
+/*height: 100px;*/
+/*color:#fff;*/
+/*text-align: center;*/
+/*position: absolute;*/
+/*left: 50%;*/
+/*top: 50%;*/
+/*margin-left: -100px;*/
+/*margin-top: -50px;*/
+/*opacity: 1;*/
+/*transition: all .8s ease;*/
+/*transform-origin: 50% 50%;*/
+/*}*/
+.step1 p {
+    transform: translate(0, -50px);
+    -webkit-transform: translate(0, -50px);
+}
+.step2 p {
+    opacity: 0;
+    transform: scale(2);
+    -webkit-transform: scale(2);
+}
+.step3 p {
+    transform: scale(1);
+    -webkit-transform: scale(1)
+opacity: 1;
+}
+.step4 p {
+    -webkit-transform: rotate(360deg) translate(0,-200px) scale(.3);
+    transform: rotate(360deg) translate(0,-200px) scale(.3);
+    opacity: 0;
+}
+
+
+
+
+
+@media screen and (max-width: 680px){
+    .title{
+        font-size: 16px;
+        width: 100%;
+        height: auto;
+        margin-left: -50%;
+        margin-top: -20px;
+        letter-spacing: 1px;
+    }
+    .title img{
+        display: inline;
+    }
+    .page3-txt1{
+        letter-spacing: 2px;
+    }
+
+
+}
+
+
+@media (max-width: 992px) {
+    .page1-txt{
+        width: 100%;
+        margin: 40px auto 0;
+        margin-left: -50%;
+        color: #21252e!important;
+    }
+    .big{
+        display: none!important;
+    }
+    .page3-con.title{
+        color: #fff;
+        letter-spacing: 0px;
+        text-align: left;
+        line-height: 40px;
+        margin-top: 40px;
+        margin-left: -37%;
+    }
+    .page3-con.title .page3-img{
+        width: 46%!important;
+        top: -40px;
+    }
+    .page3-txt,.page3-txt1{
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .page3-txt1{
+        letter-spacing: 0px;
+    }
+
+
+    .page4-txt.title {
+        width: 250px;
+        margin-left: -125px;
+    }
+    .page4-txt.title .page4-txt-con {
+        width: 250px;
+        height: 200px;
+        text-align: center;
+        color: #fff;
+        background-color: rgba(17,182,194,0.5);
+    }
+    .page4-txt .page4-txt-con .yinshua{
+        padding-top: 20px;
+        font-weight: bold;
+        font-size: 34px!important;
+    }
+    .page4-txt .page4-txt-con .fuwu{
+        margin:0;
+        font-size: 18px!important;
+    }
+    .page4-txt-p3 {
+        font-size: 14px;
+        margin-top: -8px;
+    }
+    .page4-txt .checkout {
+        text-align: center;
+        display: block;
+        width: 250px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        margin-top: 10px;
+        background: #eb6877;
+        color: #fff;
+    }
+    .page4-txt .checkout img{
+        display: inline;
+    }
+
+    .page5-con{
+        /*max-height: 400px;*/
+        /*background: #269ca5;*/
+        /*padding: 4px;*/
+        /*box-sizing: border-box;*/
+        /*margin-top: -20px;*/
+        /*text-align: center;*/
+        display: none;
+    }
+    /*.page5-head{*/
+    /*font-size: 20px;*/
+    /*color: #fff;*/
+    /*}*/
+
+    .small-img-p{
+        width: 300px;
+        height: auto;
+        margin-left: -150px;
+    }
+    /*.page5-list img{*/
+    /*width: 50px;*/
+    /*float: left;*/
+    /*}*/
+    /*.page5-list-p{*/
+    /*font-size: 14px;*/
+    /*color: #fff;*/
+    /*text-align: left;*/
+    /*}*/
+    /*.contact01{*/
+    /*text-align: left;*/
+    /*font-size: 14px;*/
+    /*}*/
+    /*.contact01 img{*/
+    /*float: left;*/
+    /*}*/
+    /*.contact02{*/
+    /*display: none;*/
+    /*}*/
+    /*.contact-wechat{*/
+    /*display: block;*/
+    /*}*/
+    /*.contact-wechat img{*/
+    /*width: 20px;*/
+    /*}*/
+    .small-page5{
+        height: 60%;
+        background: #269ca5;
+        padding: 4px;
+        box-sizing: border-box;
+        /*margin-top: -20px;*/
+        text-align: center;
+
+    }
+    .small-page5 .title{
+        margin-top: -34px;
+        color: #fff;
+    }
+    .small-page5 .titleEng{
+        display: inline;
+        width: 300px;
+        height: auto;
+        margin-left: -150px;
+        margin-top: 6px;
+        text-align: center;
+    }
+
+    .page5-box{
+        margin-top: -130px;
+    }
+    .page5-box img{
+        width: 250px;
+        display: inline;
+        text-align: center;
+    }
+    .lianxi{
+        position: absolute;
+        bottom: 110px;
+        left: 20px;
+        font-size: 14px;
+        text-align: left;
+    }
+    .lianxi p{
+        margin: 4px 0px;
+        font-size: 12px!important;
+        line-height: 22px;
+    }
+    .lianxi img{
+        float: left;
+        margin-right: 10px;
+    }
+    .contact-wechat img{
+        width: 20px;
+    }
+    .download{
+        display: block;
+        background: #11b6c2;
+        border-radius: 6px;
+        text-align: center;
+        color: #fff;
+        width: 80%;
+        height: 50px;
+        line-height: 50px;
+        position: absolute;
+        bottom: 54px;
+        left: 50%;
+        margin-left: -40%;
+    }
+    .download img{
+        display: inline;
+        width: 16px;
+        margin-right: 6px;
+    }
+
+
+
+    footer{
+        height: auto;
+        background: #131616;
+        color: #fff;
+        font-size: 10px;
+        position: absolute;
+        padding: 4px 10px;
+        bottom: 0px;
+        left: 0px;
+    }
+}
+
+@media (min-width: 992px) {
+    .page1{
+        background-size: cover;
+        background-position: 76% 0%;
+    }
+    .page1 .title{
+        margin-top: 200px;
+    }
+    .page1 .title,.page1 .page1-txt.titleEng{
+        text-align: left;
+        margin-left: -400px;
+
+    }
+    .page1 .page1-logo,.page1 .page1-txt.titleEng{
+        /*margin-left: -100px!important;*/
+    }
+    .page1 .title .page1-box.big{
+        margin-left: -280px;
+    }
+    .page1 .title .page1-logo{
+        display: inline;
+
+    }
+    .page1 .title .titleEng{
+        width: 500px;
+        margin-left: -250px;
+        letter-spacing:0;
+    }
+    .navbar-nav{
+        background: #21252e;
+    }
+    .navbar-brand {
+        padding: 15px 15px;
+    }
+    .nav-phone{
+        height: 62px;
+        padding-top: 20px;
+    }
+    .navbar-nav > li{
+        border-bottom: none;
+    }
+    .nav-phone .tel-left{
+        height: 62px;
+        margin-left: -12px;
+        margin-top: -20px;
+    }
+    .small,.page1 .title .page1-logo.small{
+        display: none;
+    }
+    .page3-con.title{
+        color: #fff;
+        letter-spacing: 2px;
+        text-align: left;
+        line-height: 40px;
+    }
+    .page3-txt{
+        margin-top: 20px;
+    }
+    .page3-txt1{
+        letter-spacing: 6px;
+    }
+
+
+
+
+    .page4-txt {
+        width: 410px;
+        position: absolute;
+        left: 400px;
+        top: 200px;
+        letter-spacing: 0px;
+    }
+    .page4-txt-con {
+        width: 410px;
+        height: 380px;
+        text-align: center;
+        color: #fff;
+        background-color: rgba(17,182,194,0.5);
+    }
+    .page4-txt .page4-txt-con .yinshua {
+        padding-top: 85px;
+        font-weight: bold;
+        font-size: 70px!important;
+    }
+    .page4-txt .page4-txt-con .fuwu {
+        margin: 40px 0;
+        font-size: 32px!important;
+    }
+    .page4-txt-p3 {
+        font-size: 20px;
+        margin-top: -8px;
+    }
+    .page4-txt .checkout {
+        text-align: center;
+        display: block;
+        width: 410px;
+        height: 90px;
+        line-height: 90px;
+        font-size: 30px;
+        margin-top: 20px;
+        background: #eb6877;
+        color: #fff;
+    }
+    .page4-txt .checkout img{
+        display: inline;
+    }
+
+
+    .page5-con {
+        width: 100%;
+        max-height: 60%;
+        margin-top: -10px;
+        /*padding-top: 80px;*/
+        text-align: center;
+        color: #fff;
+        /* min-height: 436px; */
+        background-color: #269ca5;
+    }
+    .page5-head {
+        font-size: 24px;
+        padding: 30px 0;
+    }
+    .page5-intro {
+        font-size: 16px!important;
+    }
+    .page5-all {
+        width: 1090px;
+        height: 300px;
+        margin: 20px auto 0;
+    }
+    .page5-list {
+        position: relative;
+        width: 360px;
+        height: 260px;
+        float: left;
+        text-align: center;
+    }
+    .page5-list img{
+        display: inline;
+        width: 170px;
+    }
+    .page5-list2 {
+        border-right: 1px solid #a3d3d7;
+        border-left: 1px solid #a3d3d7;
+    }
+    .page5-list-p {
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+        /* padding: 0 20px; */
+        font-size: 16px;
+        margin: 20px 0 0;
+    }
+    .contact {
+        color: #000;
+        width: 1080px;
+        height: 186px;
+        margin: 38px auto 0;
+    }
+    .contact01 {
+        width: 360px;
+        float: left;
+    }
+    .contact01 img{
+        display: inline;
+    }
+    .contact-left {
+        text-align: left;
+    }
+    .contact01 .contact02 {
+        font-size: 16px!important;
+        color: #269ca5!important;
+        margin-top: 6px;
+    }
+    .contact01 p {
+        color: #000!important;
+    }
+    .contact-us {
+        margin-top: 20px;
+        font-size: 24px!important;
+    }
+    .contact-phone, .contact-address {
+        margin: 30px 0;
+        font-size: 16px!important;
+    }
+    .contact-phone img, .contact-address img {
+        margin-bottom: 4px;
+        margin-right: 10px;
+    }
+    .contact-wechat{
+        display: none;
+    }
+    footer {
+        position: absolute;
+        bottom: 0;
+        /* left: 0; */
+        width: 100%;
+        height: 46px;
+        background: #000;
+        color: #fff;
+    }
+    .copyright {
+        font-size: 14px!important;
+        line-height: 46px!important;
+    }
+    .small-page5,.small-img-p{
+        display: none;
+    }
+    .about-lianxi,.app-download,.support-img2,.flow-img2{
+        display: none;
+    }
+    .product-con{
+        max-width: 1140px;
+        margin:100px auto 0;
+    }
+
+}
+
