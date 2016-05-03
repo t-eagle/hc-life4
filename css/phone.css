@@ -1,5 +1,6 @@
+@charset "utf-8";
 html {
-    -ms-touch-action: none;  /* ×èÖ¹windows Phone µÄÄ¬ÈÏ´¥ÃþÊÂ¼þ */
+    -ms-touch-action: none;  /* é˜»æ­¢windows Phone çš„é»˜è®¤è§¦æ‘¸äº‹ä»¶ */
 }
 body,
 div,
@@ -83,6 +84,9 @@ body {
 }
 .navbar-default .navbar-nav>li>a:hover {
     color: #d2fcff;
+}
+.navbar-default .navbar-nav .phone-active{
+    color: #11b6c2;
 }
 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse{
     max-height: 400px;
@@ -431,6 +435,9 @@ opacity: 1;
         letter-spacing: 2px;
         text-align: left;
         line-height: 40px;
+        position: absolute;
+        left: 350px;
+        top: 200px;
     }
     .page3-txt{
         margin-top: 20px;

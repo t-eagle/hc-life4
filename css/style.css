@@ -1,4 +1,4 @@
-
+@charset "utf-8";
 body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
 body{font:12px"Microsoft YaHei","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%;}
 a{color:#2d374b;text-decoration:none}
@@ -456,7 +456,7 @@ footer{
     line-height: 46px!important;
 }
 
-/*Ğ¡Ô­µãµ¼º½*/
+/*å°åŸç‚¹å¯¼èˆª*/
 
 
 #navBar {
@@ -529,7 +529,7 @@ footer{
 
 
 
-/*å…³äºæˆ‘ä»¬*/
+/*éå……ç°¬é´æˆœæ»‘*/
 .about-head{
     height: 180px;
     margin-top: 70px;
@@ -637,7 +637,7 @@ footer.about{
 }
 
 
-/*åŠ ç›Ÿä»£ç†*/
+/*é”çŠµæ´˜æµ ï½‡æ‚Š*/
 .join-us{
     height: 200px;
     margin-top: 80px;
@@ -837,7 +837,7 @@ footer.about{
 
 
 
-/*äººæ‰æ‹›è˜*/
+/*æµœçƒ˜å¢ é·æ¶œä»’*/
 
 .recruitment-head{
     height: 170px;
@@ -1023,7 +1023,7 @@ footer.about{
 
 
 
-/*äº§å“ä¸­å¿ƒ*/
+/*æµœÑƒæ§æ¶“î…ç¸¾*/
 .container{
     width: 100%;
     /*margin: 100px auto 0;*/
@@ -1382,7 +1382,7 @@ footer.about{
 
 
 
-/*äº§å“è¯¦ç»†é¡?*/
+/*æµœÑƒæ§ç’‡ï¸¾ç²æ¤¤?*/
 
 .container{
     /*max-width: 1110px;*/
@@ -1583,7 +1583,7 @@ footer.about{
         top: 0;
     }
 
-    /*²úÆ·ÖĞĞÄ*/
+    /*äº§å“ä¸­å¿ƒ*/
     .all-product1,.all-product2,.all-product5, .all-product6,.all-product7,.all-product8,.all-product11,.all-product12,.all-product13,.all-product14,.all-product17, .all-product18,.all-product19,.all-product20{
         width: 490px;
     }
@@ -1599,7 +1599,7 @@ footer.about{
 
 
 
-    /*²úÆ·ÖĞĞÄ*/
+    /*äº§å“ä¸­å¿ƒ*/
 
     .resp-tabs-list.ver_1{
         margin-top: 10px!important;
@@ -1611,7 +1611,7 @@ footer.about{
 
 
 
-    /*²úÆ·ÏêÇéÒ³*/
+    /*äº§å“è¯¦æƒ…é¡µ*/
     .nav-con{
         box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
     }
@@ -1634,9 +1634,35 @@ footer.about{
 }
 
 
-/*ÅĞ¶ÏÊÖ»ú*/
+/*åˆ¤æ–­æ‰‹æœº*/
 
 @media screen and (max-width:769px) {
+
+    .arrows{
+        position: absolute;
+        top: 24px;
+        right: 40px;
+    }
+    .arrows:after,.arrows:before{
+        border: 8px solid transparent;
+        border-left: 8px solid #23272f;
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 0;
+        right: -20px;
+        content: '';
+    }
+    .arrows:before{
+        border-left-color:#3d4148;
+        right: -21px;
+    }
+    .phone-active .arrows:before{
+        border-left-color:#11b6c2;
+        right: -21px;
+    }
+
+
     .navbar-default .navbar-toggle{
         border-color: #21252e!important;
     }
@@ -1653,7 +1679,7 @@ footer.about{
     .navbar-brand{
         line-height: 25px!important;
     }
-    /*Ê×Ò³*/
+    /*é¦–é¡µ*/
     .page1{
         background: url("../img/phone-page1-bg.jpg")center no-repeat;
     }
@@ -1712,12 +1738,12 @@ footer.about{
 
 
 
-    /*¹ØÓÚÎÒÃÇ¿ªÊ¼*/
+    /*å…³äºæˆ‘ä»¬å¼€å§‹*/
     .navbar.small,.navbar-header,.navbar-collapse{
         width: 100%;
     }
     .navbar.small .navbar-collapse .nav{
-        width: 108%;
+        width: 110%;
         /*min-width: inherit;*/
         position: static;
         height: auto;
@@ -1790,11 +1816,11 @@ footer.about{
         padding: 0 20px;
         line-height: 24px!important;
     }
-    /*¹ØÓÚÎÒÃÇ½áÊø*/
+    /*å…³äºæˆ‘ä»¬ç»“æŸ*/
 
 
 
-    /*¼ÓÃË¿ªÊ¼*/
+    /*åŠ ç›Ÿå¼€å§‹*/
     .join-us{
         margin-top: 50px;
         height: 160px;
@@ -1863,9 +1889,9 @@ footer.about{
     }
 
 
-    /*¼ÓÃË½áÊø*/
+    /*åŠ ç›Ÿç»“æŸ*/
 
-    /*²úÆ·ÖĞĞÄ¿ªÊ¼*/
+    /*äº§å“ä¸­å¿ƒå¼€å§‹*/
     .nav-all.all.resp-tab-item.hor_1{
         /*display: none;*/
     }
@@ -1975,11 +2001,11 @@ footer.about{
 
 
 
-    /*²úÆ·ÖĞĞÄ½áÊø*/
+    /*äº§å“ä¸­å¿ƒç»“æŸ*/
 
 
 
-    /*²úÆ·ÏêÇéÒ³¿ªÊ¼*/
+    /*äº§å“è¯¦æƒ…é¡µå¼€å§‹*/
     .small-nav{
         margin-top: 70px;
     }
@@ -2008,11 +2034,11 @@ footer.about{
         padding: 30px 5px;
     }
 
-    /*²úÆ·ÏêÇéÒ³½áÊø*/
+    /*äº§å“è¯¦æƒ…é¡µç»“æŸ*/
 
 
 
-    /*ÈË²ÅÕĞÆ¸¿ªÊ¼*/
+    /*äººæ‰æ‹›è˜å¼€å§‹*/
     .recruitment-head{
         margin-top: 50px;
         height: 160px;
@@ -2058,11 +2084,11 @@ footer.about{
         line-height: 20px;
     }
 
-    /*ÈË²ÅÕĞÆ¸½áÊø*/
+    /*äººæ‰æ‹›è˜ç»“æŸ*/
 
 }
 
-/*Ê×Ò³¿ªÊ¼*/
+/*é¦–é¡µå¼€å§‹*/
 .title,.titleEng {
     -webkit-animation:dragTop .7s ease-in-out both;
     -moz-animation:dragTop .7s ease-in-out both;
@@ -2121,14 +2147,14 @@ footer.about{
     /*top: 25%;*/
     /*color: #333;*/
 /*}*/
-/*Ê×Ò³½áÊø*/
+/*é¦–é¡µç»“æŸ*/
 
 
 
 
 
 
-/*¶¯»­*/
+/*åŠ¨ç”»*/
 
 @keyframes dragTop {
     0% {
