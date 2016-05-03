@@ -637,13 +637,14 @@ footer.about{
 }
 
 
-/*鍔犵洘浠ｇ悊*/
+/*关于我们开始*/
 .join-us{
     height: 200px;
     margin-top: 80px;
     text-align: center;
     background: url("../img/agent-banner.jpg") no-repeat;
     padding-top: 40px;
+    background-position-x: 16%;
 }
 .join-us-txt{
     width: 300px;
@@ -830,14 +831,14 @@ footer.about{
 .shop{
     height: 890px;
     background: url("../img/shop.jpg") no-repeat;
-
+    background-size: cover;
 }
 
 
 
 
 
-/*浜烘墠鎷涜仒*/
+/*人才招聘开始*/
 
 .recruitment-head{
     height: 170px;
@@ -1023,7 +1024,7 @@ footer.about{
 
 
 
-/*浜у搧涓績*/
+/*产品中心开始*/
 .container{
     width: 100%;
     /*margin: 100px auto 0;*/
@@ -1583,6 +1584,42 @@ footer.about{
         top: 0;
     }
 
+    /*代理加盟*/
+    .nav-right li{
+        width: 90px;
+    }
+    .join-us01{
+        min-height: 430px;
+    }
+    .why-all,.condition-list,.contact{
+        width: 100%!important;
+    }
+    .why{
+        width: 25%;
+    }
+    .condition-con{
+        width: 33%;
+    }
+    .flow img{
+        width: 95%;
+    }
+    .contact .contact01 {
+        width: 33%;
+    }
+    .contact.about .contact-left{
+        padding-left: 10px;
+    }
+    .support1, .support2, .support3, .support4, .support5{
+        width: 240px;
+    }
+    .shop{
+        background: none;
+        height: auto;
+    }
+    .shop img{
+        width: 100%;
+    }
+
     /*产品中心*/
     .all-product1,.all-product2,.all-product5, .all-product6,.all-product7,.all-product8,.all-product11,.all-product12,.all-product13,.all-product14,.all-product17, .all-product18,.all-product19,.all-product20{
         width: 490px;
@@ -1596,9 +1633,18 @@ footer.about{
 }
 @media only screen and (min-device-width:768px) and (max-device-width : 1024px) and (orientation : portrait) {
 
-
-
-
+    /*导航*/
+    .navbar-nav>li>a>span{
+        display: none;
+    }
+    /*代理*/
+    .support .support-img2{
+        margin-left: -30%!important;
+        width: 60%;
+    }
+    .flow{
+        height: 390px!important;
+    }
     /*产品中心*/
 
     .resp-tabs-list.ver_1{
@@ -1633,9 +1679,11 @@ footer.about{
     }
 }
 
+/*=========================================*/
 
 /*判断手机*/
 
+/*=========================================*/
 @media screen and (max-width:769px) {
 
     .arrows{
@@ -1820,7 +1868,7 @@ footer.about{
 
 
 
-    /*加盟开始*/
+    /*代理加盟开始*/
     .join-us{
         margin-top: 50px;
         height: 160px;
@@ -2088,7 +2136,7 @@ footer.about{
 
 }
 
-/*首页开始*/
+/*首页动画开始*/
 .title,.titleEng {
     -webkit-animation:dragTop .7s ease-in-out both;
     -moz-animation:dragTop .7s ease-in-out both;
@@ -2147,7 +2195,7 @@ footer.about{
     /*top: 25%;*/
     /*color: #333;*/
 /*}*/
-/*首页结束*/
+/*首页动画结束*/
 
 
 
